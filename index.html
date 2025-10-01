@@ -1,0 +1,685 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Material Store</title>
+
+  <!-- Google Fonts + favicon -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/default.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#F8F1F1">
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header>
+    <nav class="navbar container" aria-label="Main navigation">
+      <div style="display:flex;align-items:center;gap:.7rem;">
+        <div class="logo-badge" aria-hidden="true"></div>
+        <div class="logo">
+            <img class="logo-image" src="images/logo-image.jpg" alt="logo image">
+            ASA<span>BLACK</span></div>
+      </div>
+
+      <ul class="nav-links" id="nav-links" role="menubar" aria-label="Primary">
+        <li role="none"><a role="menuitem" href="#hero">Home</a></li>
+        <li role="none"><a role="menuitem" href="#about">About</a></li>
+        <li role="none"><a role="menuitem" href="#showcase">Showcase</a></li>
+        <li role="none"><a role="menuitem" href="#products">Products</a></li>
+        <li role="none"><a role="menuitem" href="#product2">Product2</a></li>
+        <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+        <li role="none"><a role="menuitem" href="#video-products">videos</a></li>
+      </ul>
+
+      <div class="icons" aria-hidden="false">
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="container section">
+      <div class="hero-content">
+        <div class="hero-image">
+          <!-- Replace hero.jpg with your hero image -->
+          <img src="images/hero.jpg"  loading="lazy" alt="Beautiful material on mannequin or model">
+        </div>
+        <div class="hero-text">
+          <div class="kicker">Premium fabrics & designs</div>
+          <h1>Discover Elegant Materials</h1>
+          <p>We source premium fabrics—perfect for bespoke tailoring, events, and everyday style. Explore our curated collection below.</p>
+          <div style="margin-top:1rem;">
+            <a href="#products" class="btn">Shop Materials</a>
+            <a href="#contact" class="btn ghost" style="margin-left:.6rem">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <section id="about" class="section">
+  <div class="container">
+    <h2>About Our Fabrics</h2>
+    <p class="intro">
+      At <strong>Material Store</strong>, we believe that every great fashion design starts with
+      the right fabric. That’s why we carefully select only the finest materials, each chosen
+      for its durability, texture, and beauty. Here’s what makes our fabrics special:
+    </p>
+
+    <div class="fabric-grid">
+      <div class="fabric-card">
+        <h3>Cotton</h3>
+        <p>
+          Soft, breathable, and versatile. Cotton is perfect for everyday wear and casual fashion.
+          It absorbs dyes beautifully, making it great for prints and vibrant designs.
+        </p>
+      </div>
+
+      <div class="fabric-card">
+        <h3>Linen</h3>
+        <p>
+          Known for its lightweight and airy texture, linen is ideal for summer outfits. 
+          It offers comfort, elegance, and a natural look that never goes out of style.
+        </p>
+      </div>
+
+      <div class="fabric-card">
+        <h3>Silk</h3>
+        <p>
+          Luxurious and smooth, silk drapes beautifully and adds sophistication to gowns,
+          blouses, and high-fashion pieces. It’s perfect for creating elegant, timeless looks.
+        </p>
+      </div>
+
+      <div class="fabric-card">
+        <h3>Wool</h3>
+        <p>
+          Warm and durable, wool is perfect for coats, suits, and winter wear. 
+          Its natural resilience makes it a favorite for high-quality tailoring.
+        </p>
+      </div>
+
+      <div class="fabric-card">
+        <h3>Denim</h3>
+        <p>
+          Strong and stylish, denim is iconic in jeans and jackets. It blends durability
+          with everyday fashion, making it a staple in modern wardrobes.
+        </p>
+      </div>
+
+      <div class="fabric-card">
+        <h3>Polyester</h3>
+        <p>
+          Durable, wrinkle-resistant, and easy to care for. Polyester is widely used 
+          in both fashion and sportswear, giving structure and long-lasting wear.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- SHOWCASE: 6 images -->
+    <section id="showcase" class="container section">
+      <h2>Styled with Elegance</h2>
+      <div class="showcase-gallery" aria-label="Showcase of people wearing materials">
+        <img src="images/material wearing.jpg" alt="Model wearing material 1">
+        <img src="images/material wearing2.jpg" alt="Model wearing material 2">
+        <img src="images/material wearing3.jpg" alt="Model wearing material 3">
+        <img src="images/material wearing4.jpg" alt="Model wearing material 4">
+        <img src="images/material wearing5.jpg" alt="Model wearing material 5">
+        <img src="images/material wearing.jpg" alt="Model wearing material 6">
+        <img src="images/1758792462503.jpg" alt="Model wearing material 6">
+        <img src="images/1758792462510.jpg" alt="Model wearing material 6">
+        <img src="images/1758792462518.jpg" alt="Model wearing material 6">
+      </div>
+    </section>
+
+  <!-- PRODUCTS: 20 items -->
+<section id="products" class="container">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+
+      <!-- Product 1 -->
+      <div class="product" data-name="Cashmere 7 Star" data-price="₦22,000 or ₦7,500" data-desc="Premium cashmere material, perfect for dresses and ceremonies.">
+        <img src="./images/Cashmere-7-star.jpg" alt="Cashmere-7-star">
+        <h3>Cashmere-7-star</h3>
+            <div class="price">1st grade &#8358;22,000 per yard</div>
+            <div class="price">2nd grade &#8358;7,500 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product" data-name="Cashmere-7-star" data-price="₦22,000 or ₦7,500" data-desc="Crisp cotton fabric, excellent for structured outfits.">
+        <img src="./images/Cashmere-7-star2.jpg" alt="Cashmere-7-star">
+        <h3>Cashmere-7-star</h3>
+            <div class="price">1st grade &#8358;22,000 per yard</div>
+            <div class="price">2nd grade &#8358;7,500 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product" data-name="Cashmere-7-star" data-price="₦22,000 or ₦7,500" data-desc="Luxurious silk with a smooth and shiny finish.">
+        <img src="./images/Cashmere-7-star3.jpg" alt="Cashmere-7-star>
+        <h3>Cashmere-7-star</h3>
+            <div class="price">1st grade &#8358;22,000 per yard</div>
+            <div class="price">2nd grade &#8358;7,500 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+      <!-- Product 3 -->
+      <div class="product" data-name="Cashmere-7-star" data-price="₦22,000 or ₦7,500" data-desc="Luxurious silk with a smooth and shiny finish.">
+        <img src="./images/Cashmere-7-star4.jpg" alt="Cashmere-7-star>
+        <h3>Cashmere-7-star</h3>
+            <div class="price">1st grade &#8358;22,000 per yard</div>
+            <div class="price">2nd grade &#8358;7,500 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product" data-name="Cashmere-7-star" data-price="₦22,000 or ₦7,500" data-desc="Soft velvet fabric for elegant gowns and designs.">
+        <img src="./images/Cashmere-7-star5.jpg" alt="Cashmere-7-star">
+          <h3>Cashmere-7-star</h3>
+            <div class="price">1st grade &#8358;22,000 per yard</div>
+            <div class="price">2nd grade &#8358;7,500 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product" data-name="Cashmere-7-star" data-price="₦22,000 or ₦7,500" data-desc="Traditional Ankara print with modern stylish designs.">
+        <img src="./images/Cashmere-7-star6.jpg" alt="Cashmere-7-star">
+        <h3>Cashmere-7-star</h3>
+            <div class="price">1st grade &#8358;22,000 per yard</div>
+            <div class="price">2nd grade &#8358;7,500 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product" data-name="Cashmere-7-star" data-price="₦22,000 or ₦7,500" data-desc="Rich brocade fabric with embossed patterns.">
+        <img src="./images/Cashmere-7-star7.jpg" alt="Cashmere-7-star">
+        <h3>Cashmere-7-star</h3>
+            <div class="price">1st grade &#8358;22,000 per yard</div>
+            <div class="price">2nd grade &#8358;7,500 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product" data-name="Cashmere-7-star" data-price="₦22,000 or ₦7,500" data-desc="Light and airy chiffon fabric, perfect for gowns.">
+        <img src="./images/Cashmere-7-star8.jpg" alt="Cashmere-7-star">
+        <h3>Cashmere-7-star</h3>
+            <div class="price">1st grade &#8358;22,000 per yard</div>
+            <div class="price">2nd grade &#8358;7,500 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product" data-name="Electric-cotton" data-price="₦16,000" data-desc="High-quality lace fabric with detailed embroidery.">
+        <img src="./images/Electric-cotton.jpg" alt="Electric-cotton">
+          <h3>Electric-cotton</h3>
+            <div class="price">&#8358;16,000 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="product" data-name="Denim Stretch" data-price="₦16,000" data-desc="Durable denim material with flexible stretch.">
+        <img src="./images/Electric-cotton2.jpg" alt="Electric-cotton">
+          <h3>Electric-cotton</h3>
+            <div class="price">&#8358;16,000 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 10 -->
+      <div class="product" data-name="Electric-cotton" data-price="₦16,000" data-desc="Strong polyester fabric for multipurpose use.">
+        <img src="./images/Electric-cotton3.jpg" alt="Electric-cotton">
+          <h3>Electric-cotton</h3>
+            <div class="price">&#8358;16,000 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 11 -->
+      <div class="product" data-name="Electric-cotton" data-price="₦16,000" data-desc="Shiny organza fabric perfect for party dresses.">
+        <img src="./images/Electric-cotton4.jpg" alt="Electric-cotton">
+          <h3>Electric-cotton</h3>
+            <div class="price">&#8358;16,000 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 12 -->
+      <div class="product" data-name="Gusto-Man-Wool" data-price="₦10,000" data-desc="Premium damask fabric with gold finish.">
+       <img src="./images/Gusto-Man-Wool.jpg" alt="Gusto-Man-Wool">
+          <h3>Gusto-Man-Wool</h3>
+            <div class="price">&#8358;10,000 per yard</div>
+            <button class="details-btn">Details</button>    
+      </div>
+
+      <!-- Product 13 -->
+      <div class="product" data-name="Gusto-Man-Wool" data-price="₦10,000" data-desc="Smooth taffeta fabric with shiny finish.">
+       <img src="./images/Gusto-Man-Wool2.jpg" alt="Gusto-Man-Wool">
+          <h3>Gusto-Man-Wool</h3>
+            <div class="price">&#8358;10,000 per yard</div>
+            <button class="details-btn">Details</button> 
+      </div>
+
+      <!-- Product 14 -->
+      <div class="product" data-name="Gusto-Man-Wool" data-price="₦10,000" data-desc="Soft crepe fabric suitable for flowing gowns.">
+        <img src="./images/Gusto-Man-Wool3.jpg" alt="Gusto-Man-Wool">
+          <h3>Gusto-Man-Wool</h3>
+            <div class="price">&#8358;10,000 per yard</div>
+            <button class="details-btn">Details</button> 
+      </div>
+
+      <!-- Product 15 -->
+      <div class="product" data-name="Vanetey-Cotton" data-price="₦16,000" data-desc="Classic wool fabric for suits and coats.">
+       <img src="./images/Vanetey-Cotton.jpg" alt="Vanetey-Cotton">
+          <h3>Vanetey-Cotton</h3>
+            <div class="price">&#8358;16,000 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 16 -->
+      <div class="product" data-name="Vanetey-Cotton" data-price="₦16,000" data-desc="Royal corduroy fabric with ribbed texture.">
+        <img src="./images/Vanetey-Cotton2.jpg" alt="Vanetey-Cotton">
+          <h3>Vanetey-Cotton</h3>
+            <div class="price">&#8358;16,000 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 17 -->
+      <div class="product" data-name="Vanetey-Cotton" data-price="₦16,000" data-desc="Soft Vanetey-Cotton fabric, excellent for warmth.">
+         <img src="./images/Vanetey-Cotton3.jpg" alt="Vanetey-Cotton">
+          <h3>Vanetey-Cotton</h3>
+            <div class="price">&#8358;16,000 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 18 -->
+      <div class="product" data-name="Vanetey-Cotton" data-price="₦16,000" data-desc="Breathable linen fabric, good for hot weather.">
+         <img src="./images/Vanetey-Cotton4.jpg" alt="Vanetey-Cotton">
+          <h3>Vanetey-Cotton</h3>
+            <div class="price">&#8358;16,000 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 19 -->
+      <div class="product" data-name="Vanetey-Cotton" data-price="₦16,000" data-desc="Premium suede fabric with soft texture.">
+        <img src="./images/Vanetey-Cotton5.jpg" alt="Vanetey-Cotton">
+          <h3>Vanetey-Cotton</h3>
+            <div class="price">&#8358;16,000 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+      <!-- Product 20 -->
+      <div class="product" data-name="Vanetey-Cotton" data-price="₦16,000" data-desc="Light net fabric used for veils and designs.">
+         <img src="./images/Vanetey-Cotton6.jpg" alt="Vanetey-Cotton">
+          <h3>Vanetey-Cotton</h3>
+            <div class="price">&#8358;16,000 per yard</div>
+            <button class="details-btn">Details</button>
+      </div>
+
+    </div>
+  </section>
+
+
+    <section id="product2" class="products-section">
+  <h2>Our Products</h2>
+  <div class="products-grid">
+    <!-- Example Product -->
+    <div class="product-card">
+      <img src="images/Gusto-Man-Wool-main.jpg" alt="Gusto-Man-Wool">
+      <h3>Gusto-Man-Wool </h3>
+      <p class="price">&#8358;10,000 per yard</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/Gusto-Man-Wool5.jpg" alt="Gusto-Man-Wool">
+      <h3>Gusto-Man-Wool </h3>
+      <p class="price">&#8358;10,000 per yard</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/Gusto-Man-Wool4.jpg" alt="Gusto-Man-Wool">
+      <h3>Gusto-Man-Wool </h3>
+      <p class="price">&#8358;10,000 per yard</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/Gusto-Man-Wool6.jpg" alt="Gusto-Man-Wool">
+      <h3>Gusto-Man-Wool </h3>
+      <p class="price">&#8358;10,000 per yard</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/Gusto-Man-Wool8.jpg" alt="Gusto-Man-Wool">
+      <h3>Gusto-Man-Wool </h3>
+      <p class="price">&#8358;10,000 per yard</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/HKG swiss PRO.jpg" alt="HKG swiss PRO">
+      <h3>HKG swiss PRO</h3>
+      <p class="price">&#8358;45,000 by 5yards</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/Jimmy Carter(plain).jpg" alt="Jimmy Carter(plain)">
+      <h3>Jimmy Carter(plain)</h3>
+      <p class="price">&#8358;14,000 per yard</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/Jimmy Carter(plain)2.jpg" alt="Jimmy Carter(plain)">
+      <h3>Jimmy Carter(plain)</h3>
+      <p class="price">&#8358;14,000 per yard</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/Jimmy Carter(plain)3.jpg" alt="Jimmy Carter(plain)">
+      <h3>Jimmy Carter(plain)</h3>
+      <p class="price">&#8358;14,000 per yard</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/Jimmy Carter(plain)4.jpg" alt="Jimmy Carter(plain)">
+      <h3>Jimmy Carter(plain)</h3>
+      <p class="price">&#8358;14,000 per yard</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/Jimmy Carter(plain)5.jpg" alt="Jimmy Carter(plain)">
+      <h3>Jimmy Carter(plain)</h3>
+      <p class="price">&#8358;14,000 per yard</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/Jimmy Carter(plain)6.jpg" alt="Jimmy Carter(plain)">
+      <h3>Jimmy Carter(plain)</h3>
+      <p class="price">&#8358;14,000 per yard</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/Jimmy Carter(stripe).jpg" alt="Jimmy Carter(stripe)">
+      <h3>Jimmy Carter(stripe)</h3>
+      <p class="price">&#8358;16,000 per yard</p>
+    </div>
+    <div class="product-card">
+      <img src="images/Jimmy Carter(stripe)2.jpg" alt="Jimmy Carter(stripe)">
+      <h3>Jimmy Carter(stripe)</h3>
+      <p class="price">&#8358;16,000 per yard</p>
+    </div>
+    <div class="product-card">
+      <img src="images/Jimmy Carter(stripe)3.jpg" alt="Jimmy Carter(stripe)">
+      <h3>Jimmy Carter(stripe)</h3>
+      <p class="price">&#8358;16,000 per yard</p>
+    </div>
+    <div class="product-card">
+      <img src="images/Jimmy Carter(stripe)4.jpg" alt="Jimmy Carter(stripe)">
+      <h3>Jimmy Carter(stripe)</h3>
+      <p class="price">&#8358;16,000 per yard</p>
+    </div>
+    <div class="product-card">
+      <img src="images/Jimmy Carter(stripe)5.jpg" alt="Jimmy Carter(stripe)">
+      <h3>Jimmy Carter(stripe)</h3>
+      <p class="price">&#8358;16,000 per yard</p>
+    </div>
+    <div class="product-card">
+      <img src="images/Jimmy Carter(stripe)main.jpg" alt="Jimmy Carter(stripe)">
+      <h3>Jimmy Carter(stripe)</h3>
+      <p class="price">&#8358;16,000 per yard</p>
+    </div>
+    
+    <div class="product-card">
+      <img src="images/Pima cotton.jpg" alt="Pima cotton">
+      <h3>Pima cotton</h3>
+      <p class="price">&#8358;16,000 per yard</p>
+    </div>
+    <div class="product-card">
+      <img src="images/Pima cotton2.jpg" alt="Pima cotton">
+      <h3>Pima cotton</h3>
+      <p class="price">&#8358;16,000 per yard</p>
+    </div>
+    <div class="product-card">
+      <img src="images/Pima cotton3.jpg" alt="Pima cotton">
+      <h3>Pima cotton</h3>
+      <p class="price">&#8358;16,000 per yard</p>
+    </div>
+    <div class="product-card">
+      <img src="images/Pima cotton4.jpg" alt="Pima cotton">
+      <h3>Pima cotton</h3>
+      <p class="price">&#8358;16,000 per yard</p>
+    </div>
+    <div class="product-card">
+      <img src="images/Pima Cotton5.jpg" alt="Pima cotton">
+      <h3>Pima cotton</h3>
+      <p class="price">&#8358;16,000 per yard</p>
+    </div>
+    
+
+    <div class="product-card">
+      <img src="images/PK Excellence cotton.jpg" alt="Fabric Material">
+      <h3>Linen Classic</h3>
+      <p class="price">&#8358;16,000 per yard</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/Portmann Wool(stripe).jpg" alt="Portmann Wool(stripe)">
+      <h3>Portmann Wool(stripe)</h3>
+      <p class="price">&#8358;11,000 per yard</p>
+    </div>
+    <div class="product-card">
+      <img src="images/Portmann Wool.jpg" alt="Portmann Wool">
+      <h3>Portmann Wool</h3>
+      <p class="price">&#8358;11,000 per yard</p>
+    </div>
+    <div class="product-card">
+      <img src="images/Silver Dust.jpg" alt="Silver Dust">
+      <h3>Silver Dust</h3>
+      <p class="price">&#8358;11,000 per yard</p>
+    </div>
+    <div class="product-card">
+      <img src="images/Silver Dust2.jpg" alt="Silver Dust">
+      <h3>Silver Dust</h3>
+      <p class="price">&#8358;11,000 per yard</p>
+    </div>
+    <!-- Repeat more until 15 products -->
+  </div>
+</section>
+
+<!-- Video Products Section -->
+<section id="video-products" class="video-section">
+  <h2>Our Video Materials</h2>
+  <div class="video-grid">
+    
+    <!-- Video 1 -->
+    <div class="video-card">
+      <video controls>
+        <source src="videos/VID-20250816-WA0067.mp4" type="video/mp4">
+      </video>
+    
+      <h3>Silver Dust</h3>
+      <p class="price">&#8358;11,000 per yard</p>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="video-card">
+      <video controls>
+        <source src="videos/VID-20250816-WA0068.mp4" type="video/mp4">
+        </video>
+      <h3>Silver Dust</h3>
+      <p class="price">&#8358;11,000 per yard</p>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="video-card">
+      <video controls>
+        <source class="video-card" src="videos/VID-20250926-WA0136.mp4" type="video/mp4">
+            </video>
+
+        <h3>Silver Dust</h3>
+      <p class="price">&#8358;11,000 per yard</p>
+    </div>
+
+    <!-- Video 4 -->
+    <div class="video-card">
+      <video controls>
+        <source class="video-card" src="videos/VID-20250926-WA0135.mp4" type="video/mp4">
+        </video>
+     
+      <h3>Match Day Swiss</h3>
+      <p class="price">&#8358;52,000 by 5yards</p>
+    </div>
+
+    <!-- Video 5 -->
+    <div class="video-card">
+      <video controls>
+        <source class="video-card" src="videos/VID-20250926-WA0137.mp4" type="video/mp4">
+        </video>
+      
+        <h3>Vanetey-Cotton</h3>
+        <p class="price">&#8358;16,000 per yard</p>
+    </div>
+
+    <!-- Video 6 -->
+    <div class="video-card">
+      <video controls>
+         <source class="video-card" src="videos/VID-20250926-WA0138.mp4" type="video/mp4">
+         </video>
+   
+       <h3>Silver Dust</h3>
+      <p class="price">&#8358;11,000 per yard</p>
+    </div>
+
+    <!-- Video 7 -->
+    <div class="video-card">
+      <video controls>
+       <source class="video-card" src="videos/VID-20250926-WA0143.mp4" type="video/mp4">
+        </video>
+   
+        <h3>Emirati Silk</h3>
+      <p class="price">&#8358;11,000 per yard</p>
+    </div>
+
+    <!-- Video 8 -->
+    <div class="video-card">
+      <video controls>
+       <source class="video-card" src="videos/VID-20250926-WA0142.mp4" type="video/mp4">
+        </video>
+   
+        <h3>Silver Dust</h3>
+      <p class="price">&#8358;11,000 per yard</p>
+    </div>
+
+    <!-- Video 9 -->
+    <div class="video-card">
+      <video controls>
+        <source class="video-card" src="videos/VID-20250926-WA0139.mp4" type="video/mp4">
+        </video>
+   
+        <h3>Governor Swiss</h3>
+      <p class="price">&#8358;45,000 by 5yards</p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- CONTACT -->
+<section id="contact" class="contact-section container section">
+  <h2>Contact Us</h2>
+  <p>We’d love to hear from you! Fill out the form below and we’ll get back to you soon.</p>
+
+  <form id="contact-form" aria-label="Contact form">
+    <!-- Hidden field for BCC (if needed in EmailJS template) -->
+    <input type="hidden" name="bcc_email" value="alexanderwisdom319@email.com" />
+
+    <div class="input-row">
+      <input type="text" name="from_name" placeholder="Your Name" required>
+      <input type="email" name="reply_to" placeholder="Your Email" required>
+    </div>
+
+    <div class="input-row">
+      <input type="tel" name="phone" placeholder="Phone (optional)">
+    </div>
+
+    <textarea name="message" placeholder="Your message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <!-- Toast Notifications -->
+  <div id="toast"></div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+  <div class="footer-container">
+    <p> 2025 ASABLACK EMPIRE. BUILD BY WISDOM ALEX.</p>
+    
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="https://facebook.com/Sandra Asb Akandu" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://instagram.com/asablacks_empire" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://tiktok.com/Asablacks_empire" target="_blank" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImage" src="" alt="Product image">
+      <h3 id="modalName"></h3>
+      <p id="modalPrice"></p>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+  
+
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("AlARy353qfA9QhTSD"); // Replace with your Public Key
+  })();
+
+  // Toast function
+  function showToast(message, type) {
+    const toast = document.getElementById("toast");
+    toast.innerText = message;
+    toast.className = "show " + type;
+    setTimeout(() => { toast.className = toast.className.replace("show", ""); }, 3000);
+  }
+
+  // Handle form submit
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_r4q72qt", "template_63839wl", this)
+      .then(() => {
+        showToast("✅ Message sent successfully!", "success");
+        this.reset();
+      }, (error) => {
+        showToast("❌ Failed to send message. Try again.", "error");
+        console.error("EmailJS Error:", error);
+      });
+  });
+</script>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
