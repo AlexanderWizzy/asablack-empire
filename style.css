@@ -133,7 +133,7 @@ body.dark #about p.intro {
 }
 .fabric-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.25rem;
   margin-top: 2rem;
 }
