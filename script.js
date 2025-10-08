@@ -205,3 +205,50 @@ window.onclick = (e) => {
   document.querySelectorAll('.section').forEach(s => observer.observe(s));
 });
 // script.js - Final polished interactivity with validation + toasts
+
+const imageInput = document.getElementById("imageInput");
+const productName = document.getElementById("productName");
+const productPrice = document.getElementById("productPrice");
+const productDesc = document.getElementById("productDesc");
+const uploadBtn = document.getElementById("uploadBtn");
+const gallery = document.getElementById("gallery");
+
+uploadBtn.addEventListener("click", () => {
+  const file = imageInput.files[0];
+  const name = productName.value.trim();
+  const price = productPrice.value.trim();
+  const desc = productDesc.value.trim();
+
+  if (!file || !name || !price || !desc) {
+    alert("Please fill all fields and upload an image.");
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    const productCard = document.createElement("div");
+    productCard.classList.add("product-card");
+
+    productCard.innerHTML = `
+      <img src="${e.target.result}" alt="${name}">
+      <h3>${name}</h3>
+      <p class="price">${price}</p>
+      <p class="desc">${desc}</p>
+      <button class="delete-btn">&times;</button>
+    `;
+
+    gallery.appendChild(productCard);
+
+    // delete button function
+    productCard.querySelector(".delete-btn").addEventListener("click", () => {
+      productCard.remove();
+    });
+  };
+  reader.readAsDataURL(file);
+
+  // clear inputs
+  imageInput.value = "";
+  productName.value = "";
+  productPrice.value = "";
+  productDesc.value = "";
+});
