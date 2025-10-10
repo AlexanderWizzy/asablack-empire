@@ -206,49 +206,64 @@ window.onclick = (e) => {
 });
 // script.js - Final polished interactivity with validation + toasts
 
-const imageInput = document.getElementById("imageInput");
+const manageBtn = document.getElementById("manageImagesBtn");
+const manager = document.getElementById("image-manager");
+const closeBtn = document.getElementById("close-manager");
+const uploadBtn = document.getElementById("uploadBtn");
+const deleteBtn = document.getElementById("deleteBtn");
+const imageUpload = document.getElementById("imageUpload");
 const productName = document.getElementById("productName");
 const productPrice = document.getElementById("productPrice");
-const productDesc = document.getElementById("productDesc");
-const uploadBtn = document.getElementById("uploadBtn");
-const gallery = document.getElementById("gallery");
+const productGrid = document.querySelector(".product-grid");
 
+// Open drawer
+manageBtn.addEventListener("click", () => {
+  manager.classList.add("active");
+});
+
+// Close drawer
+closeBtn.addEventListener("click", () => {
+  manager.classList.remove("active");
+});
+
+// Add image dynamically
 uploadBtn.addEventListener("click", () => {
-  const file = imageInput.files[0];
+  const file = imageUpload.files[0];
   const name = productName.value.trim();
   const price = productPrice.value.trim();
-  const desc = productDesc.value.trim();
 
-  if (!file || !name || !price || !desc) {
-    alert("Please fill all fields and upload an image.");
+  if (!file || !name || !price) {
+    alert("Please fill all fields and choose an image!");
     return;
   }
 
   const reader = new FileReader();
-  reader.onload = (e) => {
-    const productCard = document.createElement("div");
-    productCard.classList.add("product-card");
-
-    productCard.innerHTML = `
+  reader.onload = function (e) {
+    const newProduct = document.createElement("div");
+    newProduct.classList.add("product");
+    newProduct.innerHTML = `
       <img src="${e.target.result}" alt="${name}">
       <h3>${name}</h3>
-      <p class="price">${price}</p>
-      <p class="desc">${desc}</p>
-      <button class="delete-btn">&times;</button>
+      <div class="price">${price}</div>
+      <button class="details-btn">Details</button>
+      <input type="checkbox" class="select-product" />
     `;
-
-    gallery.appendChild(productCard);
-
-    // delete button function
-    productCard.querySelector(".delete-btn").addEventListener("click", () => {
-      productCard.remove();
-    });
+    productGrid.appendChild(newProduct);
   };
   reader.readAsDataURL(file);
 
-  // clear inputs
-  imageInput.value = "";
+  imageUpload.value = "";
   productName.value = "";
   productPrice.value = "";
-  productDesc.value = "";
+});
+
+// Delete selected
+deleteBtn.addEventListener("click", () => {
+  const selected = document.querySelectorAll(".select-product:checked");
+  if (selected.length === 0) {
+    alert("Select at least one product to delete!");
+    return;
+  }
+  selected.forEach(el => el.parentElement.remove());
+  alert(`${selected.length} product(s) deleted!`);
 });

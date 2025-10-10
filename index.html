@@ -134,13 +134,22 @@
 <section id="products" class="container">
     <h2>Our Products</h2>
 
-<div class="upload-box">
-    <input type="file" id="imageInput" accept="image/*">
-    <input type="text" id="productName" placeholder="Enter product name">
-    <input type="text" id="productPrice" placeholder="Enter price (e.g. ₦5,000)">
-    <textarea id="productDesc" placeholder="Enter product details"></textarea>
-    <button id="uploadBtn">Upload Product</button>
+<!-- Manage Image Section -->
+<button id="manageImagesBtn" class="manage-btn">Manage Images</button>
+
+<div id="image-manager">
+  <div class="manager-box">
+    <h3>Upload or Delete Image</h3>
+    <input type="file" id="imageUpload" accept="image/*" />
+    <input type="text" id="productName" placeholder="Product Name" />
+    <input type="text" id="productPrice" placeholder="Price (e.g. ₦7,000 per yard)" />
+    <button id="uploadBtn">Add Product</button>
+    <button id="deleteBtn" class="delete">Delete Selected</button>
+    <button id="close-manager">Close</button>
   </div>
+</div>
+
+
 
   <div id="gallery"></div>
     <div class="product-grid" >
@@ -610,15 +619,19 @@
     
     <!-- Social Links -->
     <div class="social-links">
-      <a href="https://facebook.com/Sandra Asb Akandu" target="_blank" aria-label="Facebook">
+      <a href="https://www.facebook.com/profile.php?id=61581384406507&mibextid=LQQJ4d " target="_blank" aria-label="Facebook">
         <i class="fab fa-facebook-f"></i>
       </a>
-      <a href="https://instagram.com/asablacks_empire" target="_blank" aria-label="Instagram">
+      <a href="https://www.instagram.com/asablacks_empire?igsh=MWd1ajA5Z2Z4aXd1aA%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram">
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://tiktok.com/Asablacks_empire" target="_blank" aria-label="TikTok">
+      <a href=" https://www.tiktok.com/@asablacks_empire?_t=ZS-90Liy0BKFaE&_r=1" target="_blank" aria-label="TikTok">
         <i class="fab fa-tiktok"></i>
       </a>
+      <a href="https://wa.me/+2348131211664" target="_blank" aria-label="Whatsapp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      
     </div>
   </div>
 </footer>
